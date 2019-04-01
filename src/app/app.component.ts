@@ -24,6 +24,18 @@ export class AppComponent {
      // this.loadScript('/assets/lib/jquery.nicescroll.js');
 
    }
+   scroller() {
+  var $goToTop = $('#back-to-top');
+      $goToTop.hide();
+      $(window).scroll(function(){
+        if ($(window).scrollTop()>100) $goToTop.fadeIn();
+        else $goToTop.fadeOut();
+      });
+    $goToTop.on("click", function () {
+      $('body,html').animate({scrollTop:0},1000);
+      return false;
+    });
+}
 
    public loadScript(url: string) {
     const body = <HTMLDivElement> document.body;

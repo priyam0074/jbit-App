@@ -814,3 +814,38 @@ section.grey {
 .menu-list-bg .container { display: table; height: 100%; position: relative; }
 .menu-list-bg .content-text { display: table-cell; vertical-align: middle; }
 .menu-list-bg .content-text h2 { font-size: 50px; line-height: 50px; color: #fff; }
+
+.happyHour {
+    display: block;
+    position: relative;
+    margin: 32px 0;
+}
+.happy-img {
+    width:100%;
+}
+.abc {
+    background-color: #e93e21;
+    color: #fff;
+    border-radius: 50%;
+}
+#back-to-top .top {
+    z-index: 999;
+    position: fixed;
+    margin: 0px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    position: fixed;
+    bottom: 105px;
+    right: 15px;
+    border-radius: 3px;
+    z-index: 999;
+    background: transparent;
+    font-size: 20px;
+    background: #e93e21;
+    width: 46px;
+    height: 46px;
+    outline: medium none;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 3px;
+}
