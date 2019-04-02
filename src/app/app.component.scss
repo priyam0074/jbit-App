@@ -849,3 +849,37 @@ section.grey {
     line-height: 46px;
     border-radius: 3px;
 }
+
+// Monile view 
+// header
+@media only screen and (max-width: 480px) {
+#header {
+    padding: 15px 30px;
+}
+}
+@media only screen and (max-width: 1199px) {
+#header-resoponsive {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 98;
+    padding: 12px 20px;
+    background: #fff;
+    left: 0px;
+    bottom: auto;
+    top: 0;
+}
+.watercolor69 {
+    left: auto;
+    right: -37px;
+    top: -140px;
+    z-index: 1000;
+}
+h1#logo {
+    width: auto;
+    float: left;
+}
+#menu-button {
+    display: block;
+}
+}

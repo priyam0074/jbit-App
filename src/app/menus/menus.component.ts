@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+declare var $: any;
 
 @Component({
   selector: 'app-menus',
@@ -10,6 +12,7 @@ export class MenusComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('#menuTab li:first-child a').tab('show')
   }
 
 }
