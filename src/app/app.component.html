@@ -8,7 +8,7 @@
     <a style="background: url(assets/img/logo.png) center no-repeat;
     background-size: 102px 60px;">Sehgal Warriors</a>
   </h1>
-  <div id="menu-button">
+  <div id="menu-button" (click)="sidebarToggle('menu-button')">
     <div class="centralizer">
       <div class="cursor">
         <div id="nav-button"> 
@@ -19,17 +19,37 @@
       </div>
     </div>
   </div>
+  <!--sidebar-->
+<nav class="main-nav" id="myScrollspy">
+    <ul class="clearfix" data-spy="clearfix">
+      <li> <a href="#section2" class="scroller">About</a></li>
+      <li> <a href="#section3" class="scroller">Menu</a> </li>
+      <li> <a href="#section4" class="scroller">Reservations</a></li>
+      <li> <a href="#section5" class="scroller">Testiomonials</a></li>
+      <li> <a href="#section6" class="scroller">Gallery</a></li>
+      <li> <a href="#section7" class="scroller">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<ngb-carousel >
-  <ng-template ngbSlide>
-    <img src="../assets/img/bg1.jpg" alt="Random first slide">
+
+
+<ngb-carousel class="mb-resp" id="section2">
+  <div>
+    <img src="../assets/img/edit.png" alt="Random first slide" class="img-responsive">
+    
+    </div>
+  <ng-template ngbSlide *ngFor="let item of carousolData;let i = index">
+    
+    <div>
+    <img src="{{item.imgUrl}}" alt="Random first slide" class="img-responsive happy-img">
+    </div>
     <div class="carousel-caption">
       <h3>10 seconds between slides...</h3>
       <p>This carousel uses customized default values.</p>
     </div>
   </ng-template>
-  <ng-template ngbSlide>
+  <!--<ng-template ngbSlide>
     <img src="../assets/img/fullscreen07.jpg" alt="Random second slide">
     <div class="carousel-caption">
       <h3>No mouse events...</h3>
@@ -43,7 +63,7 @@
       <h3>And no wrap after last slide.</h3>
       <p>This carousel uses customized default values.</p>
     </div>
-  </ng-template>
+  </ng-template>-->
 </ngb-carousel>
 <!--tabset-->
 <!--<ngb-tabset type="pills">
@@ -74,6 +94,10 @@
 </ngb-tabset>-->
 <app-menus></app-menus>
 <section>
+  <div class="edit-btn">
+    <img src="../assets/img/maintenance1.png" alt="Random first slide" class="img-responsive">
+    
+    </div>
   <div class="page-section-ptb">
     <div class="container">
       <div class="row">
@@ -92,7 +116,7 @@
 </section>
 <!--<book menu>-->
   <!--food menu and book-->
-  <section class="about white-bg d-none d-sm-block">
+  <section class="about white-bg d-none d-sm-block" id="section3">
     <div class="object-bottom-top">
     <div class="object-left">
       <img class="img-responsive" src="../assets/img/01.jpg" alt="">
@@ -107,9 +131,9 @@
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
             <div class="title-separator">
-              <i class="fa fa-cutlery"></i>
+              <i class="glyph-icon flaticon-food-27"></i>
             </div>
-            <h2> <span class="text-orange">Welcome to</span> The Zayka</h2>
+            <h2> <span class="text-orange">Welcome to</span> The Khan</h2>
             <p>Whatever your occasion, We makes it one to remember!</p>
           </div>
           
@@ -156,7 +180,7 @@
                 <div class="bb-custom-side page-layout-3">
                   <div class="book-content text-center" tabindex="5000" style="overflow-y: hidden; outline: none;">
                     <div class="book-logo mt-30">
-                      <img class="img-responsive center-block" src="../assets/img/book-logo.png" alt="">
+                      <img class="img-responsive center-block" src="../assets/img/book-logo13.png" alt="">
                     </div>
                     <div class="delivery-service">
                       <span class="text-white mb-10">delivery service</span>
@@ -219,7 +243,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -237,7 +261,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -323,7 +347,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -406,7 +430,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -497,7 +521,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -580,7 +604,7 @@
                           </div>
                           <div class="menu-details">
                             <div class="menu-title clearfix">
-                              <h4>PREMIUM The Zayka</h4>
+                              <h4>PREMIUM The Khan</h4>
                               <span class="price">$99.0</span>
                             </div>
                             <div class="menu-description">
@@ -616,7 +640,9 @@
           <div class="col-md-6">
             <h3 class="lone-header"><span class=" text-orange">We offer</span> <span class="watercolor watercolor62 version2 space-inbtw" >catering!</span></h3>
           </div>
-          <div class="col-md-6"> <a href="#section7" title="" class="button-quote scroller alignright">Request a Quote</a> </div>
+          <div class="col-md-6 ">
+             <div class="text-center-mobile"><a href="#section7" title="" class="button-quote scroller alignright">Request a Quote</a> 
+             </div></div>
         </div>
       </div>
       <div class="col-md-10 offset-md-1">
@@ -641,15 +667,15 @@
     </div>
   </section>
 <!--//reservation-->
-<section class="reservation-form contact-form dark page-section-ptb parallax bg-overlay-black-80" style="background-image: url(assets/img/bg1.jpg);">
+<section class="reservation-form contact-form dark page-section-ptb parallax bg-overlay-black-80" id="section4" style="background-image: url(assets/img/bg1.jpg);">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="section-title text-center">
           <div class="title-separator">
-            <i class="fa fa-cutlery"></i>
+            <i class="glyph-icon flaticon-food-27"></i>
           </div>
-          <h2 class="text-white"> <span class="text-orange">The Zayka</span> Reservation</h2>
+          <h2 class="text-white"> <span class="text-orange">The Khan</span> Reservation</h2>
           <p class="text-white">We provide free, secure and instantly confirmed online reservation.</p>
         </div>
       </div>
@@ -727,7 +753,7 @@
   </div>
 </section>
 <!--//testimonials-->
-<section class="testimonials">
+<section class="testimonials" id="section6">
   <div class="object-bottom-top">
     <div class="object-right">
       <img class="img-responsive" src="../assets/img/object05.png" alt="">
@@ -739,7 +765,7 @@
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
             <div class="title-separator">
-              <i class="fa fa-cutlery"></i>
+              <i class="glyph-icon flaticon-food-27"></i>
             </div>
             <h2 class="borderline-test"> <span class="text-orange">Our </span><span class="watercolor watercolor25"> testimonials</span></h2>
             <p>What Our Happy Clients say about us</p>
@@ -788,7 +814,7 @@
   </div>
 </section>
 
-<footer class="footer" style="background-image: url(assets/img/footer1.jpg);">
+<footer class="footer" style="background-image: url(assets/img/footer1.jpg);" id="section7">
   <div class="object-bottom">
     <div class="object-left">
       <img class="img-responsive bottom" src="../assets/img/object06.png" alt="">
@@ -801,7 +827,7 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 text-center mt-60">
         <div class="footer-logo">
-          <img id="logo-footer" class="img-responive" src="" alt="">
+          <img id="logo-footer" class="img-responive" src="../assets/img/footer-title.png" alt="">
         </div>
         <div class="col-lg-8 offset-lg-2">
           <p class=" text-white mb-60">We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
@@ -882,7 +908,7 @@
               <li><a href="#" ngbPopover="Tripadvisor" popoverClass="abc" triggers="mouseenter:mouseleave"> <i class="fa fa-tripadvisor"></i> </a> </li>
             </ul>
           </div>
-          <p class="text-white mt-30 copy-footer"> ©Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>2019</span> All right reserved by The Zayka. Designed by <a href="#"> JBIT Solutions</a></p>
+          <p class="text-white mt-30 copy-footer"> ©Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>2019</span> All right reserved by The Khan. Designed by <a href="#"> JBIT Solutions</a></p>
         </div>
       </div>
     </div>

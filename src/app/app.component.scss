@@ -24,8 +24,63 @@ h1#logo {
     width: auto;
     float: left;
 }
+.mb-resp{
+    margin-top:8%;
+}
 #menu-button {
     display:block;
+}
+.main-nav {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    display: table;
+    z-index: 900;
+    background: #fff;
+    top: -100vh;
+    right: 0;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+.open {
+    top: 0px;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+}
+.main-nav ul {
+    float: none;
+    padding: 32px 0 20px;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-nav ul {
+    position: relative;
+    margin-top: 15px;
+    padding-top: 18px;
+    list-style-type: none;
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+.affix {
+    margin:0;
+}
+.main-nav ul li a {
+    position: relative;
+    color: #959595;
+    padding: 8px 0 8px 0px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
 }
 #social-header {
     top: 140px;
@@ -52,7 +107,12 @@ h1#logo {
     
     opacity: 1;
 }
-
+.edit-btn{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    margin-top: 2%;
+}
 span {
     margin: 0;
     padding: 0;
@@ -140,7 +200,39 @@ h1#logo a {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
+.intro .centralizer .cursor #nav-button span:nth-child(1){
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: #2b2b2b;
+}
+.intro .centralizer .cursor #nav-button span:nth-child(2){
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 19px !important;
+    margin: 0px auto 3px;
+    background-color: #2b2b2b;
+}
+.intro .centralizer .cursor #nav-button span:nth-child(3) {
+    display: none;
+}
 
 //footer
 .footer {
@@ -362,7 +454,7 @@ footer .newsletter .newsletter-input a, footer .newsletter .newsletter-input but
     height: 133px;
     position: absolute;
     content: "";
-    right: 21%;
+    right: 27%;
     top: -30px;
     opacity: 0.7;
 }
@@ -668,7 +760,7 @@ section.grey {
     height: 47.5px;
     position: absolute;
     content: "";
-    left: 75%;
+    left: 45%;
     opacity: 0.7;
 }
 .button-quote {
@@ -856,6 +948,9 @@ section.grey {
 #header {
     padding: 15px 30px;
 }
+.mb-resp{
+    margin-top:23%;
+}
 }
 @media only screen and (max-width: 1199px) {
 #header-resoponsive {
@@ -879,7 +974,120 @@ h1#logo {
     width: auto;
     float: left;
 }
+.edit-btn{
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    margin-top: 1%;
+}
 #menu-button {
     display: block;
+}
+.main-nav {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    display: table;
+    z-index: 900;
+    background: #fff;
+    top: -100vh;
+    right: 0;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+.open {
+    top: 0px;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
+}
+.main-nav ul {
+    float: none;
+    padding: 32px 0 20px;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.affix {
+    margin:0;
+}
+.main-nav ul {
+    position: relative;
+    margin-top: 15px;
+    list-style-type: none;
+    padding-top: 18px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+.main-nav ul li a {
+    position: relative;
+    color: #959595;
+    padding: 8px 0 8px 0px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
+}
+.lone-header {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 44px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive;
+}
+.watercolor62::before {
+    left:64%;
+}
+.text-center-mobile {
+    float: left;
+    padding-left: 25%;
+}
+}
+@media (max-width: 991px) {
+.reservation-form .form-image {
+    display: none;
+}
+.section-title {
+    margin-bottom: 50px;
+    padding: 10px 40px;
+}
+.section-title h2 {
+    font-size: 36px;
+}
+.page-section-ptb[_ngcontent-c0] {
+    padding: 20px 0;
+}
+.reservation-form .row-eq-height {
+    display: block;
+}
+.object-bottom-top, .object-top-bottom, .object-top, .object-bottom {
+    display: none;
+}
+}
+
+@media (max-width: 767px) {
+.reservation-form.contact-form.dark.page-section-ptb .row .row {
+    padding: 30px 10px;
+    margin:0;
+}
+.reservation-form.contact-form.dark.page-section-ptb .row {
+    margin: 0px;
+    padding: 0;
+}
+.mb-resp{
+    margin-top:23%;
+}
+.main-nav {
+    width:40%;
 }
 }

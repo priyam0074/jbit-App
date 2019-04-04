@@ -673,7 +673,7 @@
 }
 
 .book[data-book="book-1"] .front:before {
-    background: url(../img/menu-cover.png);
+    background: url(../img/book-cover-menu.png);
     position: absolute;
     content: "";
     width: 100%;
@@ -685,7 +685,7 @@
     height: 100%
 }
 .star {
-    background: url(../img/menu-cover.png);
+    background: url(../img/book-cover-menu.png);
     position: absolute;
     content: "";
     width: 100%;

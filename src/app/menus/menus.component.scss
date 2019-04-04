@@ -14,7 +14,59 @@
  .pb-30 {
     padding-bottom: 30px !important;
 }
+.section-title {
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+.menu-section-title {
+    margin-bottom: 50px;
+    margin-top: 16px;
+    padding: 0 100px;
+}
+.menu-section-title h2 {
+    font-size: 44px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    color:white;
+    font-family: 'Amatic SC', cursive;
 
+}
+.section-title .title-separator {
+    position: relative;
+}
+.section-title i {
+    font-size: 35px;
+    color: #9d9d9d;
+    line-height: 35px;
+}
+.text-orange {
+    color: #e93e21;
+}
+.section-title h2 {
+    font-size: 44px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive;
+
+}
+.section-title p {
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.img-setter{
+    transform: rotate(37deg);
+    /* margin-top: -1px; */
+    top: 42px;
+    position: absolute;
+}
 .our-menu .tabs {
     padding: 0;
     font-size: 13px;
@@ -84,6 +136,7 @@ color: #fff;
 }
 .menu-section-title {
     margin-bottom: 30px;
+    margin-top: 12px;
     padding: 10px 40px;
 }
 .menu-section-title h2 {

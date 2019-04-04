@@ -8,3 +8,21 @@ body {
     background: #fff;
     line-height: 1.6;
 }
+#loader {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    right: 0px;
+    z-index: 999999;
+}

@@ -11,6 +11,13 @@ declare var $: any;
 })
 export class AppComponent {
   title = 'jbit-app';
+  carousolData : any = [
+    {imgUrl: "../assets/img/food-2.jpg"},
+    {imgUrl: "../assets/img/food-3.jpg"},
+    {imgUrl: "../assets/img/food-4.jpg"},
+    {imgUrl: "../assets/img/food-6.jpg"}
+  ]
+  
   constructor(config: NgbCarouselConfig) {
      config.interval = 10000;
     config.wrap = false;
@@ -19,10 +26,15 @@ export class AppComponent {
    }
    ngOnInit() {
      // this.loadScript('/assets/lib/modernizr.custom.js');
+     $('#loading').delay(0).fadeOut('slow');
       this.loadScript('/assets/lib/blockmin.js');
       this.onOpenBookMenu();
      // this.loadScript('/assets/lib/jquery.nicescroll.js');
 
+   }
+   sidebarToggle(id) {
+   $('#'+id).toggleClass("intro");
+   $('.main-nav').toggleClass("open");
    }
    scroller() {
   var $goToTop = $('#back-to-top');
